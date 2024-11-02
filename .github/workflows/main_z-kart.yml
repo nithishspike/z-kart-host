@@ -25,12 +25,12 @@ jobs:
       # - name: Build with Maven
       #   run: mvn clean install
       - name: List directory contents
-        run: ls -R apps
+        run: ls -R app
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: java-app
-          path: 'apps/ROOT.war'
+          path: 'app/ROOT.war'
 
   deploy:
     runs-on: ubuntu-latest
