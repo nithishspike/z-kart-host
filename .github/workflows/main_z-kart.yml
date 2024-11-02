@@ -51,5 +51,5 @@ jobs:
         with:
           app-name: 'z-kart'
           slot-name: 'Production'
-          package: '*.war'
+          package: './ROOT.war'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A95AB61036994C04BF09C18141B0028D }}
